@@ -1,0 +1,13 @@
+mongo:
+  image: mongo:latest
+  volumes:
+    - /data/db/mongo
+  ports:
+    - "27017:27017"
+
+redis:
+  image: redis:latest
+  volumes:
+    - /data/db/reddis
+  ports:
+    - "63790:6379"
